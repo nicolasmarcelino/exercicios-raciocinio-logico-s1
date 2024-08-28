@@ -1,0 +1,20 @@
+<html>
+<head><meta charset="UTF-8"></head>
+<body>
+
+<script>
+
+var HORAS_TRABALHADAS = prompt("Carga horária total (hs):");
+var SALARIO_MINIMO = prompt("Salário mínimo na sua região (R$):");
+
+var SALARIO_POR_HORAS = (SALARIO_MINIMO / 3) * HORAS_TRABALHADAS;
+var SALARIO_BRUTO = HORAS_TRABALHADAS * SALARIO_POR_HORAS;
+var IMPOSTO_A_APLICAR = SALARIO_BRUTO * 0.06;
+
+var SALARIO_A_RECEBER = SALARIO_BRUTO - IMPOSTO_A_APLICAR;
+
+document.write("Salário a receber: R$"+SALARIO_A_RECEBER);
+
+</script>
+</body>
+</html>

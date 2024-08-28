@@ -1,0 +1,20 @@
+<html>
+<body>
+
+<script>
+
+var comprimento = Number(prompt("comprimento (m):"));
+var largura = Number(prompt("largura (m):"));
+var area = comprimento * largura;
+
+var lampadas = Math.ceil(area / 10);
+
+document.write("Comprimento informado: "+comprimento+"m"+"<br>")
+document.write("Largura informada: "+largura+"m"+"<br>")
+document.write("Área: "+area+"m²"+"<br>")
+document.write("Levando em conta que 1 (uma) lâmpada de 9W ilumina 10m²,<br>serão necessárias "+lampadas+" para iluminar uma área de "+area+"m².")
+
+
+</script>
+</body>
+</html>

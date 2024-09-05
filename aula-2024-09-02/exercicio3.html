@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let peso, altura, imc;
+
+        peso = parseFloat(prompt("Peso:"))
+        altura = parseFloat(prompt("Altura:"))
+
+        imc = (peso / (altura ** 2)).toFixed(1)
+
+        if (imc > 25) {
+            document.write("Acima do peso.")
+        } else if (imc < 18.5) {
+            document.write("Abaixo do peso.")
+        } else {
+            document.write("Saudável.")
+        }
+    </script>
+</body>
+
+</html>

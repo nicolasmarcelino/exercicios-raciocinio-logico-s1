@@ -1,0 +1,32 @@
+<html>
+<head><meta charset="UTF-8"></head>
+<body>
+
+<script>
+
+var AV1, AV2, MP, AV3, NF;
+
+AV1 = 5;
+AV2 = 5;
+
+MP = (AV1+AV2)/2;
+
+if (MP < 4) {
+	document.write("REPROVADO");
+} else {
+	AV3 = 5;
+	if (AV3 < 4) {
+		document.write("REPROVADO");
+	} else {
+		NF = (MP+AV3)/2;
+		if (NF >= 5) {
+			document.write("APROVADO");
+		} else {
+			document.write("REPROVADO");
+		}
+	}
+}
+
+</script>
+</body>
+</html>

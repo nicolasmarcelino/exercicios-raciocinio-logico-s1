@@ -1,0 +1,22 @@
+<html>
+<head><meta charset="UTF-8"></head>
+<body>
+
+<script>
+
+var FAHRENHEIT = parseFloat(prompt("Informe a sua temperatura corporal:"));
+var CELSIUS = (FAHRENHEIT - 32) * (5/9);
+
+if (CELSIUS >= 37.5) {
+	document.write("Você está com febre.");
+} else if (CELSIUS < 34) {
+	document.write("Alerta de hipotermia.");
+} else {
+	document.write("Temperatura estável.");
+}
+
+document.write("<br>"+CELSIUS.toFixed(1)+"°C.");
+
+</script>
+</body>
+</html>
